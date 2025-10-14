@@ -883,7 +883,7 @@ namespace WebSocketSharp.Server
     /// The size of <paramref name="reason"/> is greater than 123 bytes.
     /// </exception>
     /// <exception cref="InvalidOperationException">
-    /// The Close method is not available when the session has not started yet.
+    /// This method is not available when the session has not started yet.
     /// </exception>
     protected void Close (CloseStatusCode code, string reason)
     {
