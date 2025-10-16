@@ -909,8 +909,7 @@ namespace WebSocketSharp.Server
     ///   </para>
     /// </remarks>
     /// <exception cref="InvalidOperationException">
-    /// The CloseAsync method is not available when the session has not
-    /// started yet.
+    /// This method is not available when the session has not started yet.
     /// </exception>
     protected void CloseAsync ()
     {
