@@ -990,7 +990,7 @@ namespace WebSocketSharp.Server
     protected void CloseAsync (ushort code, string reason)
     {
       if (_websocket == null) {
-        var msg = "The CloseAsync method is not available.";
+        var msg = "The session has not started yet.";
 
         throw new InvalidOperationException (msg);
       }
