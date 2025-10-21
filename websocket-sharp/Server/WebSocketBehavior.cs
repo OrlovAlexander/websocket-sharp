@@ -1119,7 +1119,7 @@ namespace WebSocketSharp.Server
     /// </exception>
     protected bool Ping ()
     {
-      if (_websocket == null) {
+      if (!_registered) {
         var msg = "The session has not started yet.";
 
         throw new InvalidOperationException (msg);
